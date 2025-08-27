@@ -29,3 +29,9 @@ body {
 .rodo-module-label {
     @apply text-[#EFF0F1] text-2xs inline-block md:text-xs;
 }
+
+/* Slider */
+.slider-arrow {
+    @apply cursor-pointer shadow-2xl w-8 aspect-square grid place-items-center bg-white rounded-full text-sm;
+    @apply md:w-14 md:text-7xl;
+}

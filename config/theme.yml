@@ -1,0 +1,16 @@
+
+name: moxbee-classic
+display_name: moxbee-classic
+version: 1.0.0
+author:
+  name: Moxbee
+  email: pawel.kobylarski@moxbee.pl
+  url: https://moxbee.pl
+parent: classic
+assets:
+  css:
+    all:
+      - assets/css/custom.css
+  js:
+    all:
+      - assets/js/custom.js

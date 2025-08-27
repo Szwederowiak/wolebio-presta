@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@import "./theme-variables.css";
+
+@utility container {
+    @apply w-full sm:w-[22.5rem] md:w-[45rem] lg:w-[71.25rem] xl:w-[102.5rem]; /* 100% 360px 720px 1140px 1640px */
+    @apply mx-auto;
+}
+
+body {
+    @apply py-20;
+}
+
+.rodo-module {
+    @apply grid grid-cols-[max-content_1fr] gap-2
+}
+
+.mxb-checkbox {
+    @apply bg-white h-4 w-4 rounded-4xs grid place-items-center relative;
+    @apply after:content-[''] after:hidden after:h-[90%] after:w-[2px] after:bg-black after:rotate-45 after:absolute;
+    @apply before:content-[''] before:hidden before:h-[90%] before:w-[2px] before:bg-black before:-rotate-45 before:absolute;
+    @apply [&_input]:hidden;
+    @apply [&:has(input:checked)]:after:block [&:has(input:checked)]:before:block;
+}
+
+.rodo-module-checkbox {
+    @apply mt-1 h-3 w-3;
+}
+
+.rodo-module-label {
+    @apply text-[#EFF0F1] text-2xs inline-block md:text-xs;
+}

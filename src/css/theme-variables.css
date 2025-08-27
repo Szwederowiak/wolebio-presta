@@ -1,0 +1,120 @@
+
+@theme {
+    --breakpoint-*: initial;
+    --container-*: initial;
+    --text-*: initial;
+
+    --breakpoint-sm: 25rem; /* 400px */
+    --breakpoint-md: 48rem; /* 768px */
+    --breakpoint-lg: 75rem; /* 1200px */
+    --breakpoint-xl: 105rem; /* 1680px */
+
+    --container-sm: 22.5rem;
+    --container-md: 45rem;
+    --container-lg: 71.25rem;
+    --container-xl: 102.5rem;
+
+    --font-sans: Rubik, ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+
+    --font-icons-outlined: 'Material Symbols Outlined';
+    --font-icons-rounded: 'Material Symbols Rounded';
+    --font-icons-sharp: 'Material Symbols Sharp';
+
+    --custom-size-7xs: 0.0625rem;   /* 1px */ 
+    --custom-size-6xs: 0.125rem;    /* 2px */ 
+    --custom-size-5xs: 0.25rem;     /* 4px */ 
+    --custom-size-4xs: 0.375rem;    /* 6px */ 
+    --custom-size-3xs: 0.5rem;      /* 8px */ 
+    --custom-size-2xs: 0.625rem;    /* 10px */ 
+    --custom-size-xs: 0.75rem;      /* 12px */ 
+    --custom-size-sm: 0.875rem;     /* 14px */ 
+    --custom-size-base: 1rem;       /* 16px */ 
+    --custom-size-lg: 1.125rem;     /* 18px */ 
+    --custom-size-xl: 1.25rem;      /* 20px */ 
+    --custom-size-2xl: 1.375rem;    /* 22px */ 
+    --custom-size-3xl: 1.5rem;      /* 24px */ 
+    --custom-size-4xl: 1.625rem;    /* 26px */ 
+    --custom-size-5xl: 1.75rem;     /* 28px */ 
+    --custom-size-6xl: 1.875rem;    /* 30px */ 
+    --custom-size-7xl: 2rem;        /* 32px */ 
+    --custom-size-8xl: 2.125rem;    /* 34px */ 
+    --custom-size-9xl: 2.25rem;     /* 36px */ 
+    --custom-size-10xl: 2.375rem;   /* 38px */ 
+    --custom-size-11xl: 2.5rem;     /* 40px */ 
+    --custom-size-12xl: 2.625rem;   /* 42px */ 
+    --custom-size-13xl: 2.75rem;    /* 44px */ 
+    --custom-size-14xl: 2.875rem;   /* 46px */ 
+    --custom-size-15xl: 3rem;       /* 48px */ 
+    --custom-size-16xl: 3.125rem;   /* 50px */ 
+    --custom-size-17xl: 3.25rem;    /* 52px */ 
+    --custom-size-18xl: 3.375rem;   /* 54px */ 
+    --custom-size-19xl: 3.5rem;     /* 56px */ 
+    --custom-size-20xl: 3.625rem;   /* 58px */ 
+    --custom-size-21xl: 3.75rem;    /* 60px */ 
+    --custom-size-22xl: 3.875rem;   /* 62px */ 
+    --custom-size-23xl: 4rem;       /* 64px */ 
+    --custom-size-24xl: 4.125rem;   /* 66px */ 
+    --custom-size-25xl: 4.25rem;    /* 68px */ 
+    --custom-size-26xl: 4.375rem;   /* 70px */ 
+    --custom-size-27xl: 4.5rem;     /* 72px */ 
+    --custom-size-28xl: 4.625rem;   /* 74px */ 
+    --custom-size-29xl: 4.75rem;    /* 76px */ 
+    --custom-size-30xl: 4.875rem;   /* 78px */ 
+
+    --text-2xs: var(--custom-size-2xs);
+    --text-xs: var(--custom-size-xs);
+    --text-sm: var(--custom-size-sm);
+    --text-base: var(--custom-size-base);
+    --text-lg: var(--custom-size-lg);
+    --text-xl: var(--custom-size-xl);
+    --text-2xl: var(--custom-size-2xl);
+    --text-3xl: var(--custom-size-3xl);
+    --text-4xl: var(--custom-size-4xl);
+    --text-5xl: var(--custom-size-5xl);
+    --text-6xl: var(--custom-size-6xl);
+    --text-7xl: var(--custom-size-7xl);
+    --text-8xl: var(--custom-size-8xl);
+    --text-9xl: var(--custom-size-9xl);
+    --text-10xl: var(--custom-size-10xl);
+    --text-11xl: var(--custom-size-11xl);
+    --text-12xl: var(--custom-size-12xl);
+    --text-13xl: var(--custom-size-13xl);
+    --text-14xl: var(--custom-size-14xl);
+    --text-15xl: var(--custom-size-15xl);
+    --text-16xl: var(--custom-size-16xl);
+    --text-17xl: var(--custom-size-17xl);
+    --text-18xl: var(--custom-size-18xl);
+    --text-19xl: var(--custom-size-19xl);
+    --text-20xl: var(--custom-size-20xl);
+    --text-21xl: var(--custom-size-21xl);
+    --text-22xl: var(--custom-size-22xl);
+    --text-23xl: var(--custom-size-23xl);
+    --text-24xl: var(--custom-size-24xl);
+    --text-25xl: var(--custom-size-25xl);
+    --text-26xl: var(--custom-size-26xl);
+    --text-27xl: var(--custom-size-27xl);
+    --text-28xl: var(--custom-size-28xl);
+    --text-29xl: var(--custom-size-29xl);
+    --text-30xl: var(--custom-size-30xl);
+
+    --radius-4xs: var(--custom-size-4xs);
+    --radius-2xs: var(--custom-size-2xs);
+    --radius-xs: var(--custom-size-xs);
+    --radius-sm: var(--custom-size-sm);
+    --radius-base: var(--custom-size-base);
+    --radius-lg: var(--custom-size-lg);
+    --radius-xl: var(--custom-size-xl);
+    --radius-2xl: var(--custom-size-2xl);
+    --radius-3xl: var(--custom-size-3xl);
+    --radius-4xl: var(--custom-size-4xl);
+    --radius-5xl: var(--custom-size-5xl);
+    --radius-6xl: var(--custom-size-6xl);
+    
+
+    /* 20px */
+
+    --color-primary: #F1592A;
+    --color-gray: #58585A;
+}

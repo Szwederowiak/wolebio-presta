@@ -1,0 +1,12 @@
+header#header, section#wrapper {
+    display: none !important;
+}
+
+main header#header {}
+main section#wrapper {}
+
+
+
+footer#footer {
+    margin: 100px 0;
+}

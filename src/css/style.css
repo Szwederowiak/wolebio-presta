@@ -15,7 +15,7 @@ body {
 }
 
 .mxb-checkbox {
-    @apply bg-white h-4 w-4 rounded-4xs grid place-items-center relative;
+    @apply bg-white h-4 w-4 rounded-6xs grid place-items-center relative;
     @apply after:content-[''] after:hidden after:h-[90%] after:w-[2px] after:bg-black after:rotate-45 after:absolute;
     @apply before:content-[''] before:hidden before:h-[90%] before:w-[2px] before:bg-black before:-rotate-45 before:absolute;
     @apply [&_input]:hidden;

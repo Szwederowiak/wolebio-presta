@@ -4,7 +4,7 @@
     id="blockEmailSubscription_{$hookName}"
 >
 
-    <div class="container text-white px-2.5 md:px-5 pt-8 pb-8 md:pb-20 lg:px-36 md:bg-[image:var(--newsletter-background)] md:rounded-xl">
+    <div class="container text-white px-2.5 md:px-5 pt-8 pb-8 md:pb-20 lg:px-36 md:bg-[image:var(--newsletter-background)] bg-left md:rounded-xl">
         <form action="{$urls.current_url}#blockEmailSubscription_{$hookName}" method="post">
             <div class="max-w-[33.5rem] mx-auto lg:mx-0">
                 <h2 class="text-22xl text-center pb-9 lg:text-left">

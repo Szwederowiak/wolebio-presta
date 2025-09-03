@@ -1,12 +1,23 @@
-header#header, section#wrapper {
+header#headerx,
+section#wrapperx {
     display: none !important;
 }
 
-main header#header {}
-main section#wrapper {}
-
-
+main header#header {
+}
+main section#wrapper {
+}
 
 footer#footer {
     margin: 100px 0;
+}
+
+.mxb-debug {
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    border: solid 1px black;
+    background: #ccc;
+    padding: 20px;
+    font-size: 14px;
 }

@@ -6,21 +6,95 @@ import "./../css/dev.css";
 import 'swiper/swiper-bundle.css';
 import { Pagination, Navigation } from 'swiper/modules';
 import Swiper from 'swiper';
+import Global from "./modules/global";
 
 class Home {
     constructor() {
-        console.log('test');
         this.init();
 
+        this.homeSlider;
+        this.featuredProductsSlider;
         this.aboutSlider;
         this.partnersSlider;
         this.reviewsSlider;
     }
 
     init = () => {
-        this.bindAboutSlider();
-        this.bindPartnersSlider();
-        this.bindReviewsSlider();
+        document.addEventListener('DOMContentLoaded', () => {
+            new Global();
+
+            this.bindHomeSlider();
+            this.bindFeaturedProductsSlider()
+            this.bindAboutSlider();
+            this.bindPartnersSlider();
+            this.bindReviewsSlider();
+
+            // dev
+            document.querySelectorAll('a').forEach(a => {
+                a.addEventListener('click', e => {
+                    e.preventDefault();
+                })
+            });
+            // /dev
+        });
+    }
+
+    bindHomeSlider = () => {
+        this.homeSlider = new Swiper('#home-slider .swiper', {
+            modules: [Pagination],
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                bulletClass: "bg-white h-2 md:h-4 aspect-square rounded-full block",
+                bulletActiveClass: "!bg-primary",
+            },
+            on: {
+                init: () => {
+                    document.querySelector('#home-slider .swiper-prev').addEventListener('click', () => {
+                        this.homeSlider.slidePrev();
+                    });
+
+                    document.querySelector('#home-slider .swiper-next').addEventListener('click', () => {
+                        this.homeSlider.slideNext();
+                    });
+                }
+            }
+        });
+    }
+
+    bindFeaturedProductsSlider = () => {
+        this.featuredProductsSlider = new Swiper('#featured-products-slider .swiper',
+            {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                slidesPerGroup: 1,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                breakpoints: {
+                    768: {
+                        slidesPerView: 1,
+                    },
+                    1200: {
+                        slidesPerView: 2,
+                    },
+                    1680: {
+                        slidesPerView: 3,
+                    },
+                },
+                on: {
+                    init: () => {
+                        document.querySelector('#featured-products-slider .swiper-prev').addEventListener('click', () => {
+                            this.featuredProductsSlider.slidePrev();
+                        });
+
+                        document.querySelector('#featured-products-slider .swiper-next').addEventListener('click', () => {
+                            this.featuredProductsSlider.slideNext();
+                        });
+                    }
+                }
+            }
+        );
     }
 
     bindReviewsSlider = () => {
@@ -31,7 +105,7 @@ class Home {
                 slidesPerGroup: 1,
                 loop: true,
                 loopFillGroupWithBlank: true,
-                modules: [Navigation],
+                // modules: [Navigation],
                 breakpoints: {
                     768: {
                         slidesPerView: 1,
@@ -67,7 +141,7 @@ class Home {
                 slidesPerGroup: 1,
                 loop: true,
                 loopFillGroupWithBlank: true,
-                modules: [Navigation],
+                // modules: [Navigation],
                 breakpoints: {
                     768: {
                         slidesPerView: 1,
@@ -103,7 +177,7 @@ class Home {
                 slidesPerGroup: 1,
                 loop: true,
                 loopFillGroupWithBlank: true,
-                modules: [Navigation],
+                // modules: [Navigation],
                 breakpoints: {
                     768: {
                         slidesPerView: 2,

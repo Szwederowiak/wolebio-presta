@@ -11,17 +11,18 @@
     </div>
 
     <div id="featured-products-slider" class="py-8 md:py-12 lg:py-16">
-        <div class="container relative">
+        <div class="relative md:container">
             <div class="swiper">
                 <div class="swiper-wrapper">
                     {foreach from=$products item="product" key="position"}
-                    <div class="swiper-slide">
+                    <div class="swiper-slide max-w-[280px] md:max-w-none">
                         {include file="catalog/_partials/miniatures/product.tpl"
                         product=$product position=$position}
                     </div>
                     {/foreach}
                 </div>
             </div>
+            <div class="!static hidden md:flex py-10 lg:py-14 items-center justify-center gap-2 swiper-pagination"></div>
 
             <div class="absolute z-10 -translate-y-1/2 slider-arrow swiper-prev right-full top-1/2 md:translate-x-1/2">
                 <i class="fa-solid fa-chevron-left"></i>

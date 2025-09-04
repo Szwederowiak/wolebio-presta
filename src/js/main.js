@@ -1,8 +1,5 @@
 import "./../css/style.css";
 import "./../css/dev.css";
-// import "@fontsource-variable/rubik/wght.css";
-// import "@fontsource-variable/rubik/wght-italic.css";
-// import "@fortawesome/fontawesome-free/css/all.min.css";
 import 'swiper/swiper-bundle.css';
 import { Pagination, Navigation } from 'swiper/modules';
 import Swiper from 'swiper';
@@ -66,21 +63,27 @@ class Home {
     bindFeaturedProductsSlider = () => {
         this.featuredProductsSlider = new Swiper('#featured-products-slider .swiper',
             {
-                slidesPerView: 1,
+                modules: [Pagination],
+                slidesPerView: 'auto',
                 spaceBetween: 10,
-                slidesPerGroup: 1,
-                loop: true,
-                loopFillGroupWithBlank: true,
+                centeredSlides: true,
+                pagination: {
+                    el: "#featured-products-slider .swiper-pagination",
+                    clickable: true,
+                    bulletClass: "bg-gray-100 h-2 md:h-4 aspect-square rounded-full block",
+                    bulletActiveClass: "!bg-primary",
+                },
                 breakpoints: {
                     768: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
+                        loop: true,
+                        centeredSlides: false
                     },
                     1200: {
-                        slidesPerView: 2,
-                    },
-                    1680: {
                         slidesPerView: 3,
-                    },
+                        loop: true,
+                        centeredSlides: false
+                    }
                 },
                 on: {
                     init: () => {
@@ -105,7 +108,6 @@ class Home {
                 slidesPerGroup: 1,
                 loop: true,
                 loopFillGroupWithBlank: true,
-                // modules: [Navigation],
                 breakpoints: {
                     768: {
                         slidesPerView: 1,
@@ -141,7 +143,6 @@ class Home {
                 slidesPerGroup: 1,
                 loop: true,
                 loopFillGroupWithBlank: true,
-                // modules: [Navigation],
                 breakpoints: {
                     768: {
                         slidesPerView: 1,
@@ -177,7 +178,6 @@ class Home {
                 slidesPerGroup: 1,
                 loop: true,
                 loopFillGroupWithBlank: true,
-                // modules: [Navigation],
                 breakpoints: {
                     768: {
                         slidesPerView: 2,

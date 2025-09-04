@@ -2,10 +2,12 @@
   {hook h='displayFooterBefore'}
 {/block}
 
-<div class="bg-primary pt-10 md:pt-48 lg:pt-64">
-    <div class="container py-40">
-        {* {block name='hook_footer'}{hook h='displayFooter'}{/block} *} {*
-        {block name='hook_footer_after'}{hook h='displayFooterAfter'}{/block} *}
+<div class="pt-10 bg-primary md:pt-48 lg:pt-64">
+    <div class="container py-10">
+        {include file="_sections/footer.tpl"}
+
+        {* {block name='hook_footer'}{hook h='displayFooter'}{/block} *}
+        {* {block name='hook_footer_after'}{hook h='displayFooterAfter'}{/block} *}
     </div>
 
     <div class="border-t-[1px] border-white text-white">

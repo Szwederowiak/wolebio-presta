@@ -1,17 +1,3 @@
-header#headerx,
-section#wrapperx {
-    display: none !important;
-}
-
-main header#header {
-}
-main section#wrapper {
-}
-
-footer#footer {
-    margin: 100px 0;
-}
-
 .mxb-debug {
     position: fixed;
     bottom: 20px;

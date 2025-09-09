@@ -10,7 +10,7 @@
         </div>
     </div>
 
-    <div id="featured-products-slider" class="py-8 md:py-12 lg:py-16">
+    <div id="featured-products-slider" class="">
         <div class="relative md:container">
             <div class="swiper">
                 <div class="swiper-wrapper">

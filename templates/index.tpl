@@ -11,10 +11,11 @@
 			{/block}
 		{/block}
 	</section>
-
+	
 	{include file="_sections/about.tpl"}
 	{include file="_sections/partners-slider.tpl"}
 	{include file="_sections/promotion.tpl"}
+	{hook h='displayMXBHomeProductsByCategory'}
 	{include file="_sections/home-seo-text.tpl"}
 	{include file="_sections/reviews-slider.tpl"}
 	{include file="_sections/features-icon-boxes.tpl"}

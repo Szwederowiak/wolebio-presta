@@ -37,9 +37,7 @@
                         name="submitNewsletter"
                         type="submit"
                     >
-                        <span class="material-symbols-outlined font-normal"
-                            >mail</span
-                        >
+                        <span class="fa-solid fa-envelope font-normal"></span>
                         Zapisz się {* LANG TODO: l s='Subscribe' d='Shop.Theme.Actions' *}
                     </button>
                 </div>

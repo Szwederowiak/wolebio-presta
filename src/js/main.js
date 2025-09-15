@@ -205,29 +205,6 @@ class Home {
             }
         );
     }
-
-    bindProductsByCategorySection = () => {
-        const section = document.getElementById("mxb-products-by-category");
-        if (!section) return;
-
-        const buttons = section.querySelectorAll("[data-pbc-category]");
-        const rows = section.querySelectorAll("[data-pbc-row]");
-
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                const catId = button.dataset.pbcCategory;
-
-                buttons.forEach((b) => b.classList.replace("bg-primary", "bg-gray"));
-
-                button.classList.replace("bg-gray", "bg-primary");
-
-                rows.forEach((row) => {
-                    row.classList.toggle("grid", row.dataset.pbcRow === catId);
-                    row.classList.toggle("hidden", row.dataset.pbcRow !== catId);
-                });
-            });
-        });
-    }
 }
 
 new Home();

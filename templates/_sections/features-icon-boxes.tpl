@@ -1,4 +1,4 @@
-<section class="py-10 md:py-12 lg:py-14 xl:py-16">
+<section class="py-10 md:py-12 lg:py-14 xl:py-16 mb-10">
     <div
         class="container grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5"
     >

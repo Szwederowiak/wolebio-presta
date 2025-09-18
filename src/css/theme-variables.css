@@ -1,4 +1,3 @@
-
 @theme {
     --breakpoint-*: initial;
     --container-*: initial;
@@ -9,10 +8,10 @@
     --breakpoint-lg: 75rem; /* 1200px */
     --breakpoint-xl: 105rem; /* 1680px */
 
-    --container-sm: 22.5rem;
-    --container-md: 45rem;
-    --container-lg: 71.25rem;
-    --container-xl: 102.5rem;
+    --container-sm: 22.5rem; /* 360 */
+    --container-md: 45rem; /* 720 */
+    --container-lg: 71.25rem; /* 1140 */
+    --container-xl: 102.5rem; /* 1640 */
 
     --font-sans: Rubik, ui-sans-serif, system-ui, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -117,4 +116,5 @@
 
     --color-primary: #F1592A;
     --color-gray: #58585A;
+    --color-lightgray: #CBCBCB;
 }

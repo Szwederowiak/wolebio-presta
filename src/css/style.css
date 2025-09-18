@@ -28,4 +28,33 @@ body {
 
 .rodo-module-label {
     @apply text-[#EFF0F1] text-2xs inline-block md:text-xs;
+}<<<<<<< Updated upstream
 }
+=======
+}
+
+/* Slider */
+.slider-arrow {
+    @apply grid w-8 text-sm bg-white rounded-full shadow-2xl cursor-pointer aspect-square place-items-center;
+    @apply md:w-14 md:text-7xl;
+}
+
+.dump {
+    @apply bg-red-500 text-white text-4xl font-bold p-5 border-2;
+}
+
+/* #region slider cenowy  */
+#search_filters .ui-slider {
+    @apply mx-2.5;
+}
+#search_filters .ui-slider .ui-slider-handle {
+    /* @apply h-4.5 w-4.5 rounded-full bg-white border-[1px] top-1/2 !-translate-y-1/2; */
+    @apply h-5 w-5 rounded-full bg-white border-[1px]  border-lightgray top-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+#search_filters .ui-widget-header {
+    @apply bg-primary;
+}
+
+/* #endregion slider cenowy  */
+>>>>>>> Stashed changes

@@ -18,7 +18,91 @@ class Home {
     }
 
     init = () => {
+<<<<<<< Updated upstream
         this.bindReviewsSlider();
+=======
+        document.addEventListener('DOMContentLoaded', () => {
+            new Global();
+
+            this.bindHomeSlider();
+            this.bindFeaturedProductsSlider()
+            this.bindAboutSlider();
+            this.bindPartnersSlider();
+            this.bindReviewsSlider();
+
+            // dev
+            document.querySelectorAll('a').forEach(a => {
+                a.addEventListener('click', e => {
+                    e.preventDefault();
+                })
+            });
+            // /dev
+        });
+    }
+
+    bindHomeSlider = () => {
+        this.homeSlider = new Swiper('#home-slider .swiper', {
+            modules: [Pagination],
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                bulletClass: "bg-white h-2 md:h-4 aspect-square rounded-full block",
+                bulletActiveClass: "!bg-primary",
+            },
+            on: {
+                init: () => {
+                    document.querySelector('#home-slider .swiper-prev').addEventListener('click', () => {
+                        this.homeSlider.slidePrev();
+                    });
+
+                    document.querySelector('#home-slider .swiper-next').addEventListener('click', () => {
+                        this.homeSlider.slideNext();
+                    });
+                }
+            }
+        });
+    }
+
+    bindFeaturedProductsSlider = () => {
+        this.featuredProductsSlider = new Swiper('#featured-products-slider .swiper',
+            {
+                modules: [Pagination],
+                slidesPerView: 'auto',
+                spaceBetween: 10,
+                centeredSlides: true,
+                pagination: {
+                    el: "#featured-products-slider .swiper-pagination",
+                    clickable: true,
+                    bulletClass: "bg-gray-100 h-2 md:h-4 aspect-square rounded-full block",
+                    bulletActiveClass: "!bg-primary",
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2,
+                        loop: true,
+                        centeredSlides: false
+                    },
+                    1200: {
+                        slidesPerView: 3,
+                        loop: true,
+                        centeredSlides: false
+                    }
+                },
+                on: {
+                    init: () => {
+                        document.querySelector('#featured-products-slider .swiper-prev').addEventListener('click', () => {
+                            this.featuredProductsSlider.slidePrev();
+                        });
+
+                        document.querySelector('#featured-products-slider .swiper-next').addEventListener('click', () => {
+                            this.featuredProductsSlider.slideNext();
+                        });
+                    }
+                }
+            }
+        );
+>>>>>>> Stashed changes
     }
 
     bindReviewsSlider = () => {

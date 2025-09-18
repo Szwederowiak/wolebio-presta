@@ -18,6 +18,7 @@ export default defineConfig({
     outDir: "dist",
     manifest: true,
     emptyOutDir: true,
+    minify: false,
     rollupOptions: {
       input: {
         main: "./src/js/main.js", // Główny plik JS dla front-office

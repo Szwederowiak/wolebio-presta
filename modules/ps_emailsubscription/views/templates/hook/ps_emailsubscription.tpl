@@ -1,18 +1,19 @@
 <section
     style="--newsletter-background: url('{$urls.theme_assets}img/common/newsletter/newsletter-bg.png')"
-    class="bg-[--newsletter-background] rounded-xl md:bg-none md:rounded-none block_newsletter -mb-10 md:-mb-48 lg:-mb-64 relative z-10"
+    class="bg-[image:var(--newsletter-background)] rounded-xl md:bg-none md:rounded-none block_newsletter -mb-10 md:-mb-48 lg:-mb-64 relative z-10"
     id="blockEmailSubscription_{$hookName}"
 >
 
-    <div class="container text-white px-2.5 md:px-5 pt-8 pb-8 md:pb-20 lg:px-36 md:bg-[image:var(--newsletter-background)] md:rounded-xl">
+    <div class="container text-white px-2.5 md:px-5 pt-8 pb-8 md:pb-20 lg:px-36 md:bg-[image:var(--newsletter-background)] bg-left md:rounded-xl">
         <form action="{$urls.current_url}#blockEmailSubscription_{$hookName}" method="post">
             <div class="max-w-[33.5rem] mx-auto lg:mx-0">
                 <h2 class="text-22xl text-center pb-9 lg:text-left">
                     Newsletter
                 </h2>
+                <h2 class=""></h2>
                 <p
                     id="block-newsletter-label"
-                    class="text-lg mb-24 md:text-xl md:mb-10"
+                    class="text-lg mb-24 md:text-xl md:mb-12 leading-tight"
                 >
                     {* LANG TODO: l s='Get our latest news and special sales' d='Shop.Theme.Global' *} 
                     
@@ -36,9 +37,7 @@
                         name="submitNewsletter"
                         type="submit"
                     >
-                        <span class="material-symbols-outlined font-normal"
-                            >mail</span
-                        >
+                        <span class="fa-solid fa-envelope font-normal"></span>
                         Zapisz się {* LANG TODO: l s='Subscribe' d='Shop.Theme.Actions' *}
                     </button>
                 </div>

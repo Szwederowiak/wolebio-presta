@@ -99,6 +99,7 @@
     --text-29xl: var(--custom-size-29xl);
     --text-30xl: var(--custom-size-30xl);
 
+    --radius-6xs: var(--custom-size-6xs);
     --radius-4xs: var(--custom-size-4xs);
     --radius-2xs: var(--custom-size-2xs);
     --radius-xs: var(--custom-size-xs);

@@ -5,20 +5,53 @@
                 Jesteśmy autoryzowanym dystrybutorem
             </p>
         </div>
+    </div>
+    <div id="partners-slider">
+        <div class="container relative">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide self-center">
+                        <div class="px-10">
+                            <img
+                                src="{$urls.theme_assets}img/placeholders/partners-logos/hiton.png"
+                            />
+                        </div>
+                    </div>
+                    <div class="swiper-slide self-center">
+                        <div class="px-10">
+                            <img
+                                src="{$urls.theme_assets}img/placeholders/partners-logos/biotechnik.png"
+                            />
+                        </div>
+                    </div>
+                    <div class="swiper-slide self-center">
+                        <div class="px-10">
+                            <img
+                                src="{$urls.theme_assets}img/placeholders/partners-logos/ekopelet.png"
+                            />
+                        </div>
+                    </div>
+                    <div class="swiper-slide self-center">
+                        <div class="px-10">
+                            <img
+                                src="{$urls.theme_assets}img/placeholders/partners-logos/stelmet.png"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="flex items-center gap-7 justify-between" id="partners-slider">
-            <img
-                src="{$urls.theme_assets}img/placeholders/partners-logos/hiton.png"
-            />
-            <img
-                src="{$urls.theme_assets}img/placeholders/partners-logos/biotechnik.png"
-            />
-            <img
-                src="{$urls.theme_assets}img/placeholders/partners-logos/ekopelet.png"
-            />
-            <img
-                src="{$urls.theme_assets}img/placeholders/partners-logos/stelmet.png"
-            />
+            <div
+                class="slider-arrow swiper-prev right-full top-1/2 md:translate-x-1/2 -translate-y-1/2 absolute z-10"
+            >
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+
+            <div
+                class="slider-arrow swiper-next left-full top-1/2 md:-translate-x-1/2 -translate-y-1/2 absolute z-10"
+            >
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
         </div>
     </div>
 </section>

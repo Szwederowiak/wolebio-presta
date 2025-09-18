@@ -14,20 +14,55 @@
                 brykietu oraz akcesoriów do pieców i kominków.
             </p>
         </div>
+    </div>
 
-        <div class="flex items-center justify-center gap-x-4" id="about-slider">
-            <img
-                src="{$urls.theme_assets}img/placeholders/about/slider-1.png"
-                class="rounded-xl"
-            />
-            <img
-                src="{$urls.theme_assets}img/placeholders/about/slider-2.png"
-                class="rounded-xl"
-            />
-            <img
-                src="{$urls.theme_assets}img/placeholders/about/slider-3.png"
-                class="rounded-xl"
-            />
+    <div id="about-slider" class="py-8 md:py-12 lg:py-16">
+        <div class="container relative">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img
+                            src="{$urls.theme_assets}img/placeholders/about/slide-1.png"
+                            class="rounded-xl mx-auto w-full object-cover"
+                        />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="{$urls.theme_assets}img/placeholders/about/slide-2.png"
+                            class="rounded-xl mx-auto w-full object-cover"
+                        />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="{$urls.theme_assets}img/placeholders/about/slide-3.png"
+                            class="rounded-xl mx-auto w-full object-cover"
+                        />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="{$urls.theme_assets}img/placeholders/about/slide-3.png"
+                            class="rounded-xl mx-auto w-full object-cover"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="slider-arrow swiper-prev right-full top-1/2 md:translate-x-1/2 -translate-y-1/2 absolute z-10"
+            >
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+
+            <div
+                class="slider-arrow swiper-next left-full top-1/2 md:-translate-x-1/2 -translate-y-1/2 absolute z-10"
+            >
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div
+                class="flex items-center justify-center gap-x-4"
+                id="about-slider"
+            ></div>
         </div>
     </div>
 </section>

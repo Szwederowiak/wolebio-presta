@@ -2,12 +2,20 @@
 @import "./theme-variables.css";
 
 @utility container {
-    @apply w-full sm:w-[22.5rem] md:w-[45rem] lg:w-[71.25rem] xl:w-[102.5rem]; /* 100% 360px 720px 1140px 1640px */
+    @apply w-full sm:w-[22.5rem] md:w-[45rem] lg:w-[71.25rem] xl:w-[102.5rem] px-2.5; /* 100% 360px 720px 1140px 1640px */
     @apply mx-auto;
 }
 
+.grid-container {
+    @apply grid grid-cols-1;
+    @apply sm:grid-cols-[1fr_var(--container-sm)_1fr];
+    @apply md:grid-cols-[1fr_var(--container-md)_1fr];
+    @apply lg:grid-cols-[1fr_var(--container-lg)_1fr];
+    @apply xl:grid-cols-[1fr_var(--container-xl)_1fr];
+}
+
 body {
-    @apply py-20;
+    /* @apply py-20; */
 }
 
 .rodo-module {
@@ -15,7 +23,7 @@ body {
 }
 
 .mxb-checkbox {
-    @apply bg-white h-4 w-4 rounded-4xs grid place-items-center relative;
+    @apply relative grid w-4 h-4 bg-white rounded-6xs place-items-center;
     @apply after:content-[''] after:hidden after:h-[90%] after:w-[2px] after:bg-black after:rotate-45 after:absolute;
     @apply before:content-[''] before:hidden before:h-[90%] before:w-[2px] before:bg-black before:-rotate-45 before:absolute;
     @apply [&_input]:hidden;
@@ -23,9 +31,15 @@ body {
 }
 
 .rodo-module-checkbox {
-    @apply mt-1 h-3 w-3;
+    @apply w-3 h-3 mt-1;
 }
 
 .rodo-module-label {
     @apply text-[#EFF0F1] text-2xs inline-block md:text-xs;
+}
+
+/* Slider */
+.slider-arrow {
+    @apply grid w-8 text-sm bg-white rounded-full shadow-2xl cursor-pointer aspect-square place-items-center;
+    @apply md:w-14 md:text-7xl;
 }

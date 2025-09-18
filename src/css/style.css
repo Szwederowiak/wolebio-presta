@@ -28,9 +28,6 @@ body {
 
 .rodo-module-label {
     @apply text-[#EFF0F1] text-2xs inline-block md:text-xs;
-}<<<<<<< Updated upstream
-}
-=======
 }
 
 /* Slider */
@@ -57,4 +54,3 @@ body {
 }
 
 /* #endregion slider cenowy  */
->>>>>>> Stashed changes

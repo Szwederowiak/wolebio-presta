@@ -24,8 +24,8 @@
             </div>
 
             <div class="flex items-end lg:items-center gap-2.5">
-                {hook h='displayMXBHeaderCart'} {hook h='displayMXBHeaderUser'}
-
+                {hook h='displayMXBHeaderCart'} 
+                {hook h='displayMXBHeaderUser'}
                 <button class="text-6xl cursor-pointer lg:hidden" id="mxb-open-menu-button"><span class="fa-solid fa-bars"></span></button>
             </div>
             {/block}

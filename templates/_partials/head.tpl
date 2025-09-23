@@ -1,3 +1,4 @@
+
 {block name='head_charset'}
   <meta charset="utf-8">
 {/block}
@@ -11,7 +12,6 @@
     {hook h='displayAfterTitleTag'}
   {/block}
   <meta name="description" content="{block name='head_seo_description'}{$page.meta.description}{/block}">
-  <meta name="keywords" content="{block name='head_seo_keywords'}{$page.meta.keywords}{/block}">
   {if $page.meta.robots !== 'index'}
     <meta name="robots" content="{$page.meta.robots}">
   {/if}

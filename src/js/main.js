@@ -25,7 +25,6 @@ class Home {
             this.bindAboutSlider();
             this.bindPartnersSlider();
             this.bindReviewsSlider();
-            this.bindProductsByCategorySection();
 
             // dev
             document.querySelectorAll('a').forEach(a => {

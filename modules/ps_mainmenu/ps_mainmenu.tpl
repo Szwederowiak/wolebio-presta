@@ -28,6 +28,8 @@
 	{/if}
 {/function}
 
+
+
 <div class="menu js-top-menu bg-primary/50 md:bg-primary md:p-0 fixed hidden lg:block left-0 top-0 bottom-0 w-full md:max-w-sm lg:max-w-none p-2.5 z-50 lg:static" id="mxb-main-menu">
 	<div class="relative h-full lg:container bg-primary md:bg-transparent lg:h-auto">
 		{menu nodes=$menu.children}
